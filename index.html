@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+      }
+      nav {
+        display : flex;
+        justify-content :space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18,18,62);
+      }
+
+      nav ul {
+         display: flex;
+         justify-content: center;
+      }
+
+      nav ul li {
+         list-style: none;
+        margin: 0 16px;
+      }
+      nav ul li a{
+        text-decoration: none;
+        color:white;
+      }
+      nav ul li a:hover{
+        text-decoration: none;
+        color:rgb(110, 110, 185);
+        font-size: 1.02rem;
+      }
+
+      .left{
+         font-size: 1.5rem;
+      }
+
+      .firstSection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin : 80px 0;
+      }
+      .firstSection > div{
+        width: 30%;
+      }
+      .leftSection {
+    font-size: 1.5rem;
+    /* margin: 100px 100px 10px 0; */
+      }
+      .leftSection .buttons{
+        padding: 23px 0;
+      }
+      .leftSection .btn-download{
+
+        background: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 16px;
+    font-size: 14px;
+    padding: 14px;
+      }
+
+    .leftSection .btn-github{
+
+    background: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 16px;
+    font-size: 14px;
+    padding: 14px;
+    }
+    .leftSection .btn-github a{
+        text-decoration: none;
+        color:white;
+    }
+      .rightSection img{
+        width : 60%;
+        margin: 50px 0;
+      }
+      .purple{
+        color : rgb(151, 92, 206);
+      }
+      .text-gray{
+        color:grey;
+      }
+      #element{
+        color : rgb(151, 92, 206); 
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+
+      .secondSection h1{
+        font-size: 1.9rem;
+      }
+      .secondSection .box{
+        background:rgb(245, 243, 243);
+        width: 76vw;
+        height:2px;
+        margin:56px 0;
+        display: flex;
+      }
+      .secondSection .vertical{
+        height: 63px;
+        width: 1px;
+        background-color: white;
+        margin:0 120px;
+      }
+      main hr{
+         border:0;
+         background: rgb(121, 121, 181);
+         height: 1.2px;
+         margin: 40px 84px;
+      }
+      .image-top{
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+
+      .vertical-title {
+        position : relative;
+        top: 55px;
+        width: 150px;
+      }
+      .vertical-desc{
+        position: relative;
+        top: 86px;
+        color: gray;
+        width: 150px;
+        font-size: 9px;
+      }
+      footer {
+        background-color: #181736;
+        
+      }
+      .footer{
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+
+      }
+      .footer ul{
+        list-style: none;
+      }
+
+      .footer > div{
+        width: 220px;
+      }
+      footer .footer-rights {
+        color:gray;
+        text-align:center;
+        padding: 12px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Bhavanshu's Portfolio</div>
+        <div class="right">
+            <ul>
+                <li><a href = "/">About Me</a></li>
+                <li><a href = "/">Home</a></li>
+                <li><a href = "/">Experience</a></li>
+                <li><a href = "/">Projects</a></li>
+                <li><a href = "/">Contact Me</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+<main>
+    <section class ="firstSection"> 
+        <div class="leftSection">Hi, My Name is<span class="purple"> Bhavanshu </span>   
+             <div>and I am a passionate </div>
+             <span id="element"></span>
+             
+             <div class="buttons">
+                <button class="btn-download">Download Resume</button>
+                <button class="btn-github"><a href = "https://github.com/bhavanshu-1112">Visit Github</a></button>
+             </div>
+             
+        </div>
+        <div class="rightSection">
+            <img src = "image2.png" alt = "">
+        </div>
+    </section>
+<hr>
+    <section class = "secondSection">
+        <span class="text-gray">What I have done so far ? </span>
+        <h1>Work Experience</h1>
+        <div class="box">
+            <div class="vertical">
+                <img class = "image-top" src="image1.png" alt="">
+                <div class="vertical-title"> B.Tech CSE  <div>(2018-2022)
+                    </div>
+                </div>
+                <div class="vertical-desc">CS Grad From IIIT Kota, equipped with strong foundation
+                    in technology and problem solving skills.
+                </div>
+
+               </div>
+               <div class="vertical">
+                <img class = "image-top" src="image6.png" alt="">
+                <div class="vertical-title"> Software Intern - ClearExam<div>(2020-2021)</div></div>
+                <div class="vertical-desc"> Worked upon Web Modules using HTML, CSS, Javascript, MySQL. 
+                    Learned and Worked with Industry Experts on latest tech-stack 
+                </div>
+
+               </div>
+               <div class="vertical">
+                <img class = "image-top" src="image7.png" alt="">
+                <div class="vertical-title"> Software Intern - Samsung SDS<div>(2022-2022)</div></div>
+                <div class="vertical-desc"> Worked on Web Applications using Java, Spring Boot  MVC, MySQL.
+                     Cleared SW-Advanced Test based on Complex Algorithmic Problems
+                </div>
+
+               </div>
+               <div class="vertical">
+                <img class = "image-top" src="image5.png" alt="">
+                <div class="vertical-title"> Software Engineer - Samsung SDS<div>(2022-Present)</div></div>
+                <div class="vertical-desc">Collaborated with cross-functional teams to design and deploy real-
+                    time dashboards on the o9 platform, providing executives with actionable insights into supply chain performance
+                    and boosting decision-making.
+                </div>
+
+               </div>
+           
+        </div>
+    </section>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Bhavanshu's Developer Portfolio</h3>
+            </div>
+
+            <div class="footer-second">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+           Copyright &#169; www.bhavanshuportfolio.com | All Rights Reserved
+        </div>
+    </footer>
+    <!-- <script src="script.js"></script> -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Software Engineer', 'Coder'],
+          typeSpeed: 70,
+        });
+      </script>
+  </body>
+</html>
